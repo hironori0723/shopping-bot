@@ -65,7 +65,7 @@ class LinebotsController < ApplicationController
 
     def make_part(item)
       title = item['itemName']
-      plice = item['itemPlice'].to_s + "円"
+      price = item['itemPrice'].to_s + "円"
       url = item['itemUrl']
       image = item['mediumImageUrls'].first
       {
